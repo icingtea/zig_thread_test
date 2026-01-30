@@ -205,7 +205,7 @@ pub fn compute_row(
     for (0..mat_B.cols) |j| {
         var sum: i32 = 0;
         for (0..mat_A.cols) |k| {
-            sum += mat_A.at(row, k).* * mat_B.at(k, j).*;
+            sum += mat_A.at(row, k).* * mat_B.at(j, k).*;
         }
         mat_C.at(row, j).* = sum;
     }
